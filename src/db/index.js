@@ -8,7 +8,7 @@ const connectDB = async () => {
         console.log("Database is already connected");
         return;
     }
-    // const MONGO_URI = 'mongodb+srv://nextBi:nextbi@cluster0.fs3d3.mongodb.net/' + DB_NAME;
+    
     const MONGO_URI =`${process.env.MONGO_URI}/${DB_NAME}`;
 
     try {
